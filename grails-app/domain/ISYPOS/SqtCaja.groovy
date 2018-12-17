@@ -6,11 +6,16 @@ class SqtCaja {
     String comentarios
     Date fechaMod
     int enviado
+
     SqtTienda tienda
     SqtEstatus estatus
     SqtUsuario usuarioMod
 
     static constraints = {
         caja maxSize: 2, nullable: false
+        enviado nulable: true
+        estatus nullable: true
+        comentarios maxSize: 1000, nullable: true
+
     }
 }

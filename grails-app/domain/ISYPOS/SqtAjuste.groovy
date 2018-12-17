@@ -8,6 +8,7 @@ class SqtAjuste {
     Date fechaMod
     int enviado
     String referencia
+    int numTransaccion
 
     SqtUsuario usuarioMod
     SqtTienda tienda
@@ -24,6 +25,7 @@ class SqtAjuste {
 
     static constraints = {
         comentarios maxSize: 250
-        referencia maxSize: 32
+        referencia maxSize: 32 ,nullable: true
+        enviado nullable:true
     }
 }

@@ -7,8 +7,15 @@ class SqtCotizacionPedido {
     Double precioRegalo
     Double precioUnitario
     Date fechaMod
-    SqtUsuario usuarioMod
     int enviado
+
+    SqtPedido pedido
+    SqtTienda tienda
+    SqtProveedor proveedor
+    SqtProducto producto
+    SqtUsuario usuarioMod
+
     static constraints = {
+        enviado nullable:true
     }
 }

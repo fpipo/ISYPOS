@@ -8,6 +8,7 @@ class SqtAcreedor {
     String responsableEmail
     Date fechaMod
     int enviado
+
     SqtTipo tipo
     SqtEstatus estatus
     SqtCondicionPago condicionPago
@@ -19,5 +20,6 @@ class SqtAcreedor {
         responsable maxSize: 15, nullable: true
         responsableTel maxSize: 30, nullable: true
         responsableEmail email: true, maxSize: 130, nullable: true
+        enviado nullable:true
     }
 }

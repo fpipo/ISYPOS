@@ -3,6 +3,7 @@ package ISYPOS
 class SqtCantidadCaja {
     Double cantidad
     String caja
+
     SqtTienda tienda
     SqtAsignacion asignacion
     SqtFormaPago formaPago
@@ -11,3 +12,5 @@ class SqtCantidadCaja {
         caja maxSize: 2, nullable: false
     }
 }
+
+/* Solo para ISYPOS*/
