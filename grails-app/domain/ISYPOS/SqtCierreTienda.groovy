@@ -2,7 +2,7 @@ package ISYPOS
 
 class SqtCierreTienda {
     Date diaOperacion
-    Date fechamod
+    Date fechaMod
     int enviado
 
     SqtUsuario usuarioMod

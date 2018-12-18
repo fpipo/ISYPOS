@@ -1,15 +1,17 @@
 package ISYPOS
 
 class SqtDetalleIusa {
-    int cantidad
+    SqtTienda tienda
+    SqtVenta venta
+    Double cantidad
     String concepto
     Double monto
     Double iva
     String referencia
-    SqtTienda tienda
-    SqtVenta venta
 
     static constraints = {
-        concepto maxSize: 150, nullable: false
+        monto nullable: true
+        iva nullable:  true
+        referencia maxSize: 150, nullable: true
     }
 }
