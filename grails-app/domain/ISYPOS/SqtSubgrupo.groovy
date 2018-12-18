@@ -6,6 +6,12 @@ class SqtSubgrupo {
     int enviado
     Double pctCompra
 
+    SqtGrupo grupo
+
+
     static constraints = {
+
+        descripcion maxSize: 50
+        enviado nullable:true
     }
 }

@@ -16,13 +16,16 @@ class SqtDetalleVentaProducto {
     Double precioCompraSiva
     int enviado
     Double montoIsb
+
     SqtTienda tienda
-    SqtProducto producto
-    SqtProducto codigo
+    SqtProducto producto, codigo
     SqtUsuario usuarioAutorizacion
     SqtImpuesto impuesto
     SqtPoliza poliza
 
+    static belongsTo = [traspasoP: SqtVenta]
+
     static constraints = {
+        enviado nullable:true
     }
 }

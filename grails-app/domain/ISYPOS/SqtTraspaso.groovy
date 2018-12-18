@@ -1,7 +1,7 @@
 package ISYPOS
 
 class SqtTraspaso {
-
+    String id
     String tipotraspaso
     Date fechaProceso
     Date fechaSurte
@@ -14,12 +14,29 @@ class SqtTraspaso {
     int numTransaccionT
     Double pctEfectividad
     Double cantidadNoSolicitada
-    SqtUsuario usuarioMod
+
     Date fechaMod
     int enviado
     Double totalSugerido
     Double totalSurtido
 
+    SqtTienda tiendaOrigen
+    SqtTienda tiendaDestino
+    SqtMovimiento movimiento
+    SqtEstatus estatus
+    SqtUsuario usuarioMod
+
+    static mapping = {
+        id generator: 'uuid', name:'id'
+    }
+
+    static hasMany = [traspaso:SqtDetalleTraspaso]
+
     static constraints = {
+        tipotraspaso maxSize: 2
+        tipoConsumo maxSize: 2
+        impresionDestino maxSize: 10
+        comentarios maxSize: 250
+        enviado nullable:true
     }
 }

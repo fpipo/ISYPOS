@@ -18,12 +18,13 @@ class SqtPagoIusa {
     String medidor
     int enviado
     String dependenciaNombre
-    String dependenciaRFC
-    String dependenciaDIR
+    String dependenciaRfc
+    String dependenciaDir
     String domicilio
     String poblacion
     String cuenta
     Date fechaAlta
+
     String tarifa
     SqtTienda tienda
     SqtVenta venta
@@ -38,11 +39,12 @@ class SqtPagoIusa {
         desError maxSize: 150
         medidor maxSize: 150
         dependenciaNombre maxSize: 100
-        dependenciaRFC maxSize: 20
-        dependenciaDIR maxSize: 500
+        dependenciaRfc maxSize: 20
+        dependenciaDir maxSize: 500
         domicilio maxSize: 50
         poblacion maxSize: 50
         cuenta maxSize: 50
         tarifa maxSize: 20
+        enviado nullable:true
     }
 }

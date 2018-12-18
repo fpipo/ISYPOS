@@ -24,9 +24,24 @@ class SqtVenta {
     int enviado
     Date fecha
 
+    SqtTienda tienda
+
+    SqtListaPrecios listaPrecios
+    SqtEstatus estatus
+    SqtFactura factura
+
+    static hasMany = [traspasoP:SqtDetalleVentaProducto, traspasoS:SqtDetalleVentaServicio]
+
     static mapping = {
         id generator: 'uuid', name:'id'
     }
     static constraints = {
+        caja maxSize:3
+        ticket maxSize: 2
+        tipoventa maxSize: 3
+        comentarios maxSize: 3000
+        enviado nullable:true
+
+
     }
 }

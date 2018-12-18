@@ -2,10 +2,12 @@ package ISYPOS
 
 class SqtPassword {
 
-    String passwoed
+    String password
     Date fechaMod
     SqtUsuario usuario
 
     static constraints = {
+        password maxSize: 50
+
     }
 }

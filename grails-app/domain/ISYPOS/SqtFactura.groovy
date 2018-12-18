@@ -28,12 +28,13 @@ class SqtFactura {
     String usoCfdi
     String serie
     String metodoPago
+
+    SqtTienda tienda
     SqtCliente cliente
     SqtEstado estado
     SqtPais pais
     SqtEstatus estatus
-    SqtUsuario usuarioMod
-    SqtUsuario usuarioAutorizacion
+    SqtUsuario usuarioMod, usuarioAutorizacion
 
     static hasMany = [detalles:SqtDetalleFactura]
 
@@ -42,6 +43,20 @@ class SqtFactura {
     }
 
     static constraints = {
-
+        nombre maxSize: 50
+        apaterno maxSize: 50
+        amaterno maxSize: 50
+        rfc maxSize: 15
+        razonSocial maxSize: 250
+        calle maxSize: 50
+        colonia maxSize: 50
+        municipio maxSize: 50
+        cp maxSize: 5
+        ciudad maxSize: 50
+        comentarios maxSize: 50
+        mensaje maxSize: 250
+        tipoPago maxSize: 100
+        numTarjeta maxSize: 100
+        enviado nullable:true
     }
 }

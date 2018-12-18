@@ -1,7 +1,7 @@
 package ISYPOS
 
 class SqtKardex {
-
+    String id
     Date fecha
     String hora
     Double existenciaInical
@@ -20,8 +20,26 @@ class SqtKardex {
     Date fechaMod
     int enviado
     Double montoIbs
-    Double precioVentaSivaComp
+
+
+    SqtTienda tienda
+    SqtProducto producto
+    SqtMovimiento movimiento
+    SqtArea area
+    SqtPoliza poliza
+    SqtFactura factura
+    SqtImpuesto impuesto
+
+
+    static mapping = {
+        id generator: 'uuid', name:'id'
+    }
+
 
     static constraints = {
+        hora maxSize: 12
+        comentarios maxSize: 1000
+        enviado nullable:true
+
     }
 }

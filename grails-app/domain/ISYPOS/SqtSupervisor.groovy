@@ -2,9 +2,13 @@ package ISYPOS
 
 class SqtSupervisor {
 
-    Date fechaInicio
-    Date fechaFin
+    String nombre
+    int enviado
 
     static constraints = {
+
+        nombre maxSize: 100
+        enviado nullable:true
+
     }
 }

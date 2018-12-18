@@ -10,6 +10,9 @@ class SqtPoliza {
     Date fechaMod
     int enviado
     SqtUsuario usuarioMod
+    SqtMovimiento movimiento
+    SqtTienda tienda
+
 
     static hasMany = [detalles:SqtDetallePoliza]
 
@@ -21,5 +24,7 @@ class SqtPoliza {
         sociedad maxSize: 4, nullable: false
         periodo maxSize: 2, nullable: false
         comentarios maxSize: 250
+        enviado nullable:true
+
     }
 }

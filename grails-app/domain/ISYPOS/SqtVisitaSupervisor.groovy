@@ -2,8 +2,15 @@ package ISYPOS
 
 class SqtVisitaSupervisor {
     Date llegada
-    SqtUsuario usuarioMod
+    int enviado
+
+    String  usuarioMod
+    SqtTienda tienda
+    SqtSupervisor supervisor
+
 
     static constraints = {
+        usuarioMod maxSize: 30
+        enviado nullable:true
     }
 }

@@ -17,10 +17,17 @@ class SqtInventarioCompensacion {
     Double cobroPventaSiva
     Double iva
     Double total
-    String ajustado
+    int ajustado
     int enviado
     Double montoIsb
 
+    SqtTienda tienda
+    SqtProducto producto
+    SqtImpuesto impuesto
+
+
     static constraints = {
+        enviado nullable:true
+
     }
 }
