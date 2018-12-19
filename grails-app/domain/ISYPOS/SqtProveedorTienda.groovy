@@ -1,18 +1,13 @@
 package ISYPOS
 
-class SqtRecargaServicios {
-
-    Double monto
-    SqtServicio servicio
+class SqtProveedorTienda {
+    SqtProveedor proveedor
+    SqtTienda tienda
     SqtEstatus estatus
     int enviado
 
-
     static constraints = {
-        servicio nullable: true
-        monto nullable: true
         estatus nullable: true
         enviado nullable:true
-
     }
 }

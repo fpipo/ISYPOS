@@ -1,17 +1,18 @@
 package ISYPOS
 
 class SqtInventarioCategoria {
-    Date fecha
+    Date fechamod
     int enviado
 
     SqtInventario inventario
     SqtTienda tienda
     SqtCategoria categoria
     SqtGrupo grupo
-    SqtSubgrupo subGrupo
+    SqtSubgrupo subgrupo
     SqtUsuario usuarioMod
 
     static constraints = {
-        enviado nullable:true
+        usuarioMod nullable: true
+        enviado nullable: true
     }
 }

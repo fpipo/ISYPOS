@@ -14,7 +14,6 @@ class SqtProductoPaquete {
     Double margenUtilidadSugerido
     Double precioVentaSiva
     Double montoIva
-    Double montoFs
     Double precioCompraSiva
     Double precioCompraCiva
     int enviado
@@ -23,10 +22,14 @@ class SqtProductoPaquete {
     SqtListaPrecios listaPrecios
     SqtImpuesto impuesto
 
-
     static constraints = {
-
+        pctDescuento nullable: true
+        sugerido nullable: true
+        precioSugerido nullable: true
+        margenUtilidadSugerido nullable: true
+        precioCompraSiva nullable: true
+        precioCompraCiva nullable: true
+        montoIsb nullable: true
         enviado nullable:true
-
     }
 }

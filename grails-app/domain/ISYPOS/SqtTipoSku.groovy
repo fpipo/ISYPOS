@@ -1,11 +1,11 @@
 package ISYPOS
 
-class SqtTranTdc {
-    Date diaOperacion
+class SqtTipoSku {
+    String descripcion
+    Date fechaCreacion
     Date fechaMod
+    String usuarioMod
     int enviado
-
-    SqtTienda tienda
 
     static constraints = {
         enviado nullable:true

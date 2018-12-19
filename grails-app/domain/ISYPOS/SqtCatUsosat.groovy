@@ -3,6 +3,7 @@ package ISYPOS
 class SqtCatUsosat {
     String idUso
     String descripcion
+
     SqtEstatus estatus
 
     static constraints = {

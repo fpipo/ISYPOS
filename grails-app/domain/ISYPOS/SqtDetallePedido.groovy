@@ -8,8 +8,7 @@ class SqtDetallePedido {
     Double total
     String codigoCaja
     String presentacion
-    String archivo
-    Double montoFs
+    SqtArchivo archivo
     int enviado
 
     SqtTienda tienda
@@ -25,8 +24,6 @@ class SqtDetallePedido {
         unidadMedida nullable: true
         codigoCaja maxSize: 30, nullable: true
         presentacion maxSize: 10, nullable: true
-        archivo maxSize: 30, nullable: true
-        montoFs nullable: true
         impuesto nullable: true
         enviado nullable:true
     }

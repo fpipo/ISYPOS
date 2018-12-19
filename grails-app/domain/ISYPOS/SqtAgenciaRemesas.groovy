@@ -2,14 +2,10 @@ package ISYPOS
 
 class SqtAgenciaRemesas {
     String nombre
+    int comercio
+    int agencia
+
     SqtTienda tienda
-    /*
-    * SqtComercic idComercio
-    * SqtAgencia idAgencia
-    *
-    *
-    * necesito saber de donde vienen los id´s de estos campos
-    * */
 
     static constraints = {
         nombre maxSize: 100

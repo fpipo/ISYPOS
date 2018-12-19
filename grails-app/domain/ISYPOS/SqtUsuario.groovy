@@ -1,7 +1,7 @@
 package ISYPOS
 
 class SqtUsuario {
-
+    String username
     String nombre
     String aPaterno
     String aMaterno
@@ -20,7 +20,7 @@ class SqtUsuario {
     String rfc
     String numInterior
     String numExterior
-    String entidadNac
+    String entidadNacimiento
     String estadoCivil
     String regimen
     Genero genero
@@ -30,6 +30,7 @@ class SqtUsuario {
     Date fechaRegistro
     int noEmpleado
     String foto
+    String password
 
     SqtEstado estado
     SqtPais pais
@@ -37,32 +38,39 @@ class SqtUsuario {
     SqtAcreedor acreedor
     SqtDeudor  deudor
     SqtCliente cliente
+    SqtTelefono telefono
+    SqtPassword histPassword
 
     static mapping = {
         genero enumType: 'ordinal'
     }
 
     static constraints = {
-        foto maxSize: 50
+        username maxSize: 10
+        foto maxSize: 50, nullable: true
         nombre maxSize: 50
         aPaterno maxSize: 50
         aMaterno maxSize: 50
-        calle maxSize: 50
-        colonia maxSize: 50
-        municipio maxSize: 50
-        cp maxSize: 50
-        ciudad maxSize: 50
-        email email: true
-        seguroSocial maxSize: 50
-        curp maxSize: 50
-        rfc maxSize: 50
-        numInterior maxSize: 10
-        numExterior maxSize: 20
-        entidadNac maxSize: 100
-        estadoCivil maxSize: 50
-        regimen maxSize: 50
-        estudios maxSize: 50
-        infonavit maxSize: 5
-        cuentaBancaria maxSize: 30
+        calle maxSize: 50, nullable: true
+        colonia maxSize: 50, nullable: true
+        municipio maxSize: 50, nullable: true
+        cp maxSize: 5, nullable: true
+        ciudad maxSize: 50, nullable: true
+        email email: true, nullable: true
+        numIntentos nullable: true
+        fechaNacimiento nullable: true
+        seguroSocial maxSize: 16, nullable: true
+        curp maxSize: 20, nullable: true
+        rfc maxSize: 13, nullable: true
+        numInterior maxSize: 10, nullable: true
+        numExterior maxSize: 20, nullable: true
+        entidadNacimiento maxSize: 100, nullable: true
+        estadoCivil maxSize: 50, nullable: true
+        regimen maxSize: 50, nullable: true
+        estudios maxSize: 50, nullable: true
+        infonavit maxSize: 5, nullable: true
+        cuentaBancaria maxSize: 30, nullable: true
+        fechaRegistro nullable: true
+        noEmpleado nullable: true
     }
 }

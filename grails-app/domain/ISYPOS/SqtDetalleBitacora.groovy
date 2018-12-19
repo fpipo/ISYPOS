@@ -3,7 +3,7 @@ package ISYPOS
 class SqtDetalleBitacora {
     Double cantidad
     Double precioVenta
-    Date fechamod
+    Date fechaMod
     int enviado
 
     SqtUsuario usuarioMod
