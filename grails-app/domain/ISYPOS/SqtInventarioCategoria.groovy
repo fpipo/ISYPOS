@@ -1,7 +1,7 @@
 package ISYPOS
 
 class SqtInventarioCategoria {
-    Date fechamod
+    Date fechaMod
     int enviado
 
     SqtInventario inventario
