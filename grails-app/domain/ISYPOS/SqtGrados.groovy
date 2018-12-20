@@ -3,9 +3,10 @@ package ISYPOS
 class SqtGrados {
     Double grados
 
-    SqtProducto codigo
+    SqtProducto producto
 
     static constraints = {
-    grados nullable:true
+        producto nullable: true
+        grados nullable:true
     }
 }

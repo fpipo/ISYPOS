@@ -1,7 +1,6 @@
 package ISYPOS
 
 class SqtPreciosOferta {
-
     Date fechaInicio
     Date fechaFin
     Double precioCompraCiva
@@ -21,7 +20,7 @@ class SqtPreciosOferta {
     Double margenUtilidad
     int aplicaOferta
     Date fechaMod
-    String usuarioMod
+    SqtUsuario usuarioMod
     int enviado
     Double montoIsb
 
@@ -30,9 +29,7 @@ class SqtPreciosOferta {
     SqtProducto producto
     SqtEstatus estatus
 
-
     static constraints = {
-        usuarioMod maxSize: 15
         enviado nullable:true
         fechaFin nullable: true
         montoIvaPrecioCompra nullable: true
@@ -47,9 +44,6 @@ class SqtPreciosOferta {
         precioVentaCiva nullable:true
         margenUtilidad nullable:true
         aplicaOferta nullable: true
-
-
-
-
+        estatus nullable: true
     }
 }

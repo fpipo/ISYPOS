@@ -3,7 +3,7 @@ package ISYPOS
 class SqtDetallePedido {
     Double cantidadSugerida
     Double precioCompraSiva
-    Double subTotal
+    Double subtotal
     Double iva
     Double total
     String codigoCaja
@@ -20,11 +20,12 @@ class SqtDetallePedido {
 
     static constraints = {
         precioCompraSiva nullable: true
-        subTotal nullable: true
+        subtotal nullable: true
         unidadMedida nullable: true
         codigoCaja maxSize: 30, nullable: true
         presentacion maxSize: 10, nullable: true
         impuesto nullable: true
         enviado nullable:true
+        archivo nullable: true
     }
 }

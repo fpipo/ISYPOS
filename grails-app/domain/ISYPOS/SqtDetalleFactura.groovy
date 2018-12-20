@@ -5,15 +5,13 @@ class SqtDetalleFactura {
     Double cantidad
     String descripcion
     Double precioUnitario
-    Double subTotal
+    Double subtotal
     Double montoIva
-    int unidadesFs
     int imprimir
     int enviado
     Double montoIsb
     String catSat
 
-    SqtFactura factura
     SqtTienda tienda
     SqtUnidadMedida unidadMedida
     SqtImpuesto impuesto
@@ -26,9 +24,8 @@ class SqtDetalleFactura {
         unidadMedida nullable: true
         descripcion maxSize: 50, nullable: true
         precioUnitario nullable: true
-        subTotal nullable: true
+        subtotal nullable: true
         montoIva nullable: true
-        unidadesFs nulluable: true
         imprimir nulluable: true
         catSat maxSize: 50, nullable: true
         enviado nulluable: true

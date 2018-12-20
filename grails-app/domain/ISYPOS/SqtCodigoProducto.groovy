@@ -1,6 +1,7 @@
 package ISYPOS
 
 class SqtCodigoProducto {
+    int base
     String codigo
     int enviado
 

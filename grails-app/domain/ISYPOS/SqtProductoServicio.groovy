@@ -1,6 +1,7 @@
 package ISYPOS
 
 class SqtProductoServicio {
+    SqtProducto producto
     String tipo
     Double maximo
     Double minimo

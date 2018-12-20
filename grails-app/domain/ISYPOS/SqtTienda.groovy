@@ -13,7 +13,7 @@ class SqtTienda {
     String centroCostos
     Date fechaApertura
     String serie
-    String usuarioMod
+    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
     String cc
@@ -27,10 +27,8 @@ class SqtTienda {
     SqtRuta ruta
     SqtGrupoTienda grupoTienda
     SqtEstatus estatus
-    SqtNsegmento nsegmentos
+    SqtSegmentos segmento
     SqtGrupoGlasgo grupoGlasgo
-
-
 
     static mapping = {
         id generator: 'uuid', name:'id'
@@ -51,11 +49,10 @@ class SqtTienda {
         fechaApertura nullable: true
         serie maxSize: 5, nullable:true
         cc maxSize: 3, nullable: true
-        usuarioMod maxSize: 15
         enviado nullable: true
         idServidor nullable: true
         grupoGlasgo nullable: true
-        nsegmentos nullable: true
+        segmento nullable: true
         idGrupoTiendaExtra nullable: true
     }
 }

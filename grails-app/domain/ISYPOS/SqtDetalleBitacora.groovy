@@ -1,6 +1,7 @@
 package ISYPOS
 
 class SqtDetalleBitacora {
+    int operacion
     Double cantidad
     Double precioVenta
     Date fechaMod
@@ -8,6 +9,8 @@ class SqtDetalleBitacora {
 
     SqtUsuario usuarioMod
     SqtMovimiento movimiento
+    SqtProducto producto
+    SqtTienda tienda
 
     static belongsTo = [bitacora:SqtBitacora]
 
