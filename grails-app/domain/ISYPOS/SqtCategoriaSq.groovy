@@ -7,6 +7,6 @@ class SqtCategoriaSq {
 
     static constraints = {
         descripcion maxSize: 50
-        enviado nuluable: true
+        enviado nullable: true
     }
 }

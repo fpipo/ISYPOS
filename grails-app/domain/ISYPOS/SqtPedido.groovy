@@ -18,11 +18,12 @@ class SqtPedido {
     Date cierreCaja
     Date cierreDia
     String referenciaFrog
-    SqtArchivo archivo
-    SqtUsuario usuarioMod
     Date fechaMod
     int enviado
+    int transaccion
 
+    SqtArchivo archivo
+    SqtUsuario usuarioMod
     SqtTienda tienda
     SqtCaja caja
     SqtMovimiento movimiento
@@ -30,13 +31,12 @@ class SqtPedido {
     SqtProveedor proveedor
     SqtPoliza poliza
     SqtPedido referenciaPedido
-    SqtTransaccion transaccion
 
     static mapping = {
         id generator: 'uuid', name:'id'
     }
 
-    static hasMany = [pedido:SqtDetallePedido, parcial:SqtDetalleParcial]
+    static hasMany = [pedido:SqtDetallePedido]
 
     static constraints = {
         comentarios maxSize: 255, nullable: true

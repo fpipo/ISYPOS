@@ -57,4 +57,4 @@ class SqtCierreVentaDia {
     }
 }
 
-/* Solo para CENTRALSQ*/
+/* Solo para ISYPOS*/

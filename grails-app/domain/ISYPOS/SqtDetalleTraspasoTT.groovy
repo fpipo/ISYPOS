@@ -14,10 +14,10 @@ class SqtDetalleTraspasoTT {
     SqtProducto producto
     SqtMotivoDevolucion motivoDevolucion
 
-    static belongsTo = [traspasos: SqtTraspasoTT]
+    static belongsTo = [traspasostt: SqtTraspasoTT]
 
     static constraints = {
-        enviado nulluable: true
+        enviado nullable: true
         motivoDevolucion nullable: true
         cantidadSugerida nullable: true
         cantidadSurtida nullable: true

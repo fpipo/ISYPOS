@@ -22,8 +22,9 @@ class SqtUsuario {
     String numExterior
     String entidadNacimiento
     String estadoCivil
+    String telefono
+    String celular
     String regimen
-    Genero genero
     String estudios
     String infonavit
     String cuentaBancaria
@@ -38,7 +39,6 @@ class SqtUsuario {
     SqtAcreedor acreedor
     SqtDeudor  deudor
     SqtCliente cliente
-    SqtTelefono telefono
     SqtPassword histPassword
 
     static mapping = {
@@ -46,7 +46,7 @@ class SqtUsuario {
     }
 
     static constraints = {
-        username maxSize: 10
+        username maxSize: 15
         foto maxSize: 50, nullable: true
         nombre maxSize: 50
         aPaterno maxSize: 50
@@ -72,5 +72,11 @@ class SqtUsuario {
         cuentaBancaria maxSize: 30, nullable: true
         fechaRegistro nullable: true
         noEmpleado nullable: true
+        telefono maxSize: 10, nullable: true
+        celular maxSize: 10, nullable: true
+        estado nullable: true
+        pais nullable: true
+        password maxSize: 15
+        histPassword nullable: true
     }
 }

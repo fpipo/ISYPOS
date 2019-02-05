@@ -19,7 +19,5 @@ class SqtPosionCodigo {
         posicionInicio nullable: true
         digitos nullable: true
         digitoInicio nullable: true
-
-
     }
 }

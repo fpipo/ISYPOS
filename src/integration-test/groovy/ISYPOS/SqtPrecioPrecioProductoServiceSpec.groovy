@@ -16,11 +16,11 @@ class SqtPrecioPrecioProductoServiceSpec extends Specification {
         // TODO: Populate valid domain instances and return a valid ID
         //new SqtPrecioPrecioProducto(...).save(flush: true, failOnError: true)
         //new SqtPrecioPrecioProducto(...).save(flush: true, failOnError: true)
-        //SqtPrecioPrecioProducto sqtPrecioPrecioProducto = new SqtPrecioPrecioProducto(...).save(flush: true, failOnError: true)
+        //SqtPrecioPrecioProducto sqtPrecioProducto = new SqtPrecioPrecioProducto(...).save(flush: true, failOnError: true)
         //new SqtPrecioPrecioProducto(...).save(flush: true, failOnError: true)
         //new SqtPrecioPrecioProducto(...).save(flush: true, failOnError: true)
         assert false, "TODO: Provide a setupData() implementation for this generated test suite"
-        //sqtPrecioPrecioProducto.id
+        //sqtPrecioProducto.id
     }
 
     void "test get"() {

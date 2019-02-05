@@ -1,6 +1,7 @@
 package ISYPOS
 
 class SqtDireccion {
+    int clave
     String calle
     String colonia
     String municipio
@@ -12,10 +13,12 @@ class SqtDireccion {
     SqtPais pais
 
     static constraints = {
-        calle maxSize: 50
-        colonia maxSize: 50
-        municipio maxSize: 50
-        cp maxSize: 5
-        ciudad maxSize: 50
+        calle maxSize: 50, nullable: true
+        colonia maxSize: 50, nullable: true
+        municipio maxSize: 50, nullable: true
+        cp maxSize: 5, nullable: true
+        ciudad maxSize: 50, nullable: true
+        pais nullable: true
+        estado nullable: true
     }
 }

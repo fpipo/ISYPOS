@@ -1,7 +1,6 @@
 package ISYPOS
 
 class SqtMoviemientoContable {
-
     String cuentaContable
     String idContabilizacion
     int secuencia
@@ -16,7 +15,6 @@ class SqtMoviemientoContable {
 
     SqtGrupo grupo
 
-
     static constraints = {
         cuentaContable maxSize: 30
         idContabilizacion maxSize: 2
@@ -27,6 +25,5 @@ class SqtMoviemientoContable {
         tipo maxSize: 1
         enviado nullable:true
         tipoLinea maxSize: 20
-
     }
 }

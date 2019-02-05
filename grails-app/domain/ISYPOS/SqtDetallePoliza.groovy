@@ -1,6 +1,7 @@
 package ISYPOS
 
 class SqtDetallePoliza {
+    int clavePol
     int partida
     String cuentaContable
     String contabilizacion
@@ -17,7 +18,6 @@ class SqtDetallePoliza {
     SqtTienda tienda
     SqtMovimiento movimiento
     SqtImpuesto impuesto
-    SqtCondicionPago condicionPago
     SqtNsegmento segmento
     SqtGrupo grupo
 
@@ -28,8 +28,7 @@ class SqtDetallePoliza {
         contabilizacion maxSize: 2
         impuesto nullable: true
         importe nullable: true
-        secuencia nulluable: true
-        condicionPago nullable: true
+        secuencia nullable: true
         segmento nullable: true
         division maxSize: 4, nullable: true
         centroCostos maxSize: 30, nullable: true

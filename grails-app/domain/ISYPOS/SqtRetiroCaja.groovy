@@ -17,12 +17,11 @@ class SqtRetiroCaja {
 
     SqtTienda tienda
     SqtFormaPago formaPago
-    SqtAsignacion asignacion
     SqtTipoRetiro tipoRetiro
     SqtVenta venta
 
     static constraints = {
-        caja maxSize: 2
+
         comentarios maxSize: 500, nullable: true
         cierreCajero nullable: true
         cierreCaja nullable: true

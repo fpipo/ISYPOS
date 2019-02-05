@@ -17,4 +17,4 @@ class SqtCatalogoSatFacturas {
     }
 }
 
-/* Solo para CentralSQ */
+/* Solo para ISYPOS */

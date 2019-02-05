@@ -31,5 +31,6 @@ class SqtAjuste {
         numTransaccion nullable: true
         inventario nullable: true
         opcion nullable: true
+        estatus nullable: true
     }
 }

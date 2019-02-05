@@ -30,5 +30,8 @@ class SqtInventario {
         horaInicio maxSize: 10, nullable: true
         comentarios maxSize: 3000, nullable: true
         enviado nullable:true
+        poliza nullable: true
+        factura nullable: true
+        estatus nullable: true
     }
 }

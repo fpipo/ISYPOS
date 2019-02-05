@@ -23,7 +23,7 @@ class SqtTraspasoTT {
     SqtEstatus estatus
     SqtUsuario usuarioMod
 
-    static hasMany = [traspaso:SqtDetalleTraspaso]
+    static hasMany = [traspaso:SqtDetalleTraspasoTT]
 
     static constraints = {
         fechaSurte nullable: true
@@ -40,6 +40,6 @@ class SqtTraspasoTT {
         cantidadNoSolicitada nullable: true
         totalSurtido nullable: true
         totalSugerido nullable: true
-        enviado nulluable: true
+        enviado nullable: true
     }
 }

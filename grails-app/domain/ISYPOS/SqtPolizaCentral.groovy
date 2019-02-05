@@ -14,12 +14,11 @@ class SqtPolizaCentral {
     SqtEstatus estatus
     SqtUsuario usuarioMod
     SqtCliente cliente
-    SqtMoneda moneda
 
     static constraints = {
-        moneda nullable: true
         cliente nullable: true
+        comentarios maxSize: 250, nullable: true
     }
 }
 
-/* Solo para CentralSQ */
+/* Solo para ISYPOS */

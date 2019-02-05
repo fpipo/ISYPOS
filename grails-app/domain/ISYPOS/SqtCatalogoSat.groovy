@@ -1,7 +1,6 @@
 package ISYPOS
 
 class SqtCatalogoSat {
-    int claveProdSer
     String descripcion
     int enviado
 
@@ -13,6 +12,5 @@ class SqtCatalogoSat {
         enviado nullable:true
         estatus nullable: true
         grupo nullable: true
-
     }
 }

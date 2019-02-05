@@ -14,16 +14,16 @@ class SqtCliente {
     String email
     Date fechaMod
     int enviado
-    int numInt
-    int numExt
+    String numInt
+    String numExt
+    String telefono
+    String cel
 
     SqtEstado estado
     SqtPais pais
-    SqtTelefono telefono
     SqtEstatus estatus
     SqtUsuario usuarioMod
     SqtTipo tipoCliente
-    SqtTienda tienda
 
     static constraints = {
         nombre maxSize: 50, nullable: true
@@ -40,9 +40,10 @@ class SqtCliente {
         estado nullable: true
         telefono nullable: true
         email email: true, maxSize: 50, nullable: true
-        enviado nuluable: true
-        tienda nullable: true
-        numInt nullable: true
-        numExt nullable: true
+        enviado nullable: true
+        numInt maxSize: 10, nullable: true
+        numExt maxSize: 10, nullable: true
+        telefono maxSize: 10, nullable: true
+        cel maxSize: 10, nullable: true
     }
 }

@@ -16,4 +16,4 @@ class SqtCatalagoBritish {
     }
 }
 
-/* Solo para CENTRALSQ */
+/* Solo para ISYPOS */

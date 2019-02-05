@@ -45,7 +45,7 @@ class SqtPrecioPrecioProductoControllerSpec extends Specification implements Con
         controller.save(null)
 
         then:"A 404 error is returned"
-        response.redirectedUrl == '/sqtPrecioPrecioProducto/index'
+        response.redirectedUrl == '/sqtPrecioProducto/index'
         flash.message != null
     }
 
@@ -66,7 +66,7 @@ class SqtPrecioPrecioProductoControllerSpec extends Specification implements Con
         controller.save(sqtPrecioPrecioProducto)
 
         then:"A redirect is issued to the show action"
-        response.redirectedUrl == '/sqtPrecioPrecioProducto/show/1'
+        response.redirectedUrl == '/sqtPrecioProducto/show/1'
         controller.flash.message != null
     }
 
@@ -149,7 +149,7 @@ class SqtPrecioPrecioProductoControllerSpec extends Specification implements Con
         controller.update(null)
 
         then:"A 404 error is returned"
-        response.redirectedUrl == '/sqtPrecioPrecioProducto/index'
+        response.redirectedUrl == '/sqtPrecioProducto/index'
         flash.message != null
     }
 
@@ -170,7 +170,7 @@ class SqtPrecioPrecioProductoControllerSpec extends Specification implements Con
         controller.update(sqtPrecioPrecioProducto)
 
         then:"A redirect is issued to the show action"
-        response.redirectedUrl == '/sqtPrecioPrecioProducto/show/1'
+        response.redirectedUrl == '/sqtPrecioProducto/show/1'
         controller.flash.message != null
     }
 
@@ -199,7 +199,7 @@ class SqtPrecioPrecioProductoControllerSpec extends Specification implements Con
         controller.delete(null)
 
         then:"A 404 is returned"
-        response.redirectedUrl == '/sqtPrecioPrecioProducto/index'
+        response.redirectedUrl == '/sqtPrecioProducto/index'
         flash.message != null
     }
 
@@ -215,7 +215,7 @@ class SqtPrecioPrecioProductoControllerSpec extends Specification implements Con
         controller.delete(2)
 
         then:"The user is redirected to index"
-        response.redirectedUrl == '/sqtPrecioPrecioProducto/index'
+        response.redirectedUrl == '/sqtPrecioProducto/index'
         flash.message != null
     }
 }

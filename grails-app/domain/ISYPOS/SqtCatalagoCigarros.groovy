@@ -9,8 +9,8 @@ class SqtCatalagoCigarros {
     String	codigoActivo
     String	statusCambioCodigo
     int	codigoADS
+
     SqtEstatus estatus
-    SqtProducto codigo
 
     static constraints = {
         descripcionProv maxSize: 50, nullable: false

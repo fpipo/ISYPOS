@@ -22,4 +22,4 @@ class SqtDatosTiendaPM {
     }
 }
 
-/* Solo para CENTRALSQ*/
+/* Solo para ISYPOS*/

@@ -1,48 +1,30 @@
 package ISYPOS
 
 class SqtPrecioProducto {
-    Date fechaInicio
-    Date fechaFin
-    Double precioCompraSiva
-    Double montoIvaPrecioCompra
-    int aplicaPcompraOferta
-    Double pcompraOfertaSiva
-    Double mIvaPcompraOferta
-    Double precioVentaNormal
-    Double margenUtilidadNormal
-    Double precioVentaSiva
-    Double montoIvaPrecioVenta
-    Double precioVentaCiva
-    int sugerido
-    Double precioSugerido
-    Double montoIvaPrecioSugerido
-    Double margenUtilidadSugerido
-    String sugeridoPor
-    Double pctVarianza
-    Date fechaMod
-    int enviado
-    Double montoIsb
+        Date fechaInicio
+        Date fechaFin
+        int aplicaPcompraOferta
+        Double pcompraOfertaSiva
+        Double mIvaPcompraOferta
+        Double precioVenta
+        Double precioCompra
+        Double pctVarianza
+        Date fechaMod
+        int enviado
+        Double montoIsb
 
-    SqtUsuario usuarioMod
-    SqtListaPrecios listaPrecios
-    SqtProveedor proveedor
-    SqtProducto producto
+        SqtUsuario usuarioMod
+        SqtProveedor proveedor
+        SqtListaPrecios listaPrecios
 
-    static constraints = {
-        fechaFin nullable: true
-        precioCompraSiva nullable: true
-        montoIvaPrecioCompra nullable: true
-        pcompraOfertaSiva nullable: true
-        mIvaPcompraOferta nullable: true
-        precioVentaNormal nullable: true
-        margenUtilidadNormal nullable: true
-        sugerido nullable: true
-        precioSugerido nullable: true
-        montoIvaPrecioSugerido nullable: true
-        margenUtilidadSugerido nullable: true
-        sugeridoPor nullable: true
-        pctVarianza nullable: true
-        montoIsb nullable: true
-        enviado nullable:true
-    }
+        static belongsTo = [productos:SqtProducto]
+
+        static constraints = {
+                fechaFin nullable: true
+                pcompraOfertaSiva nullable: true
+                mIvaPcompraOferta nullable: true
+                pctVarianza nullable: true
+                montoIsb nullable: true
+                enviado nullable:true
+        }
 }

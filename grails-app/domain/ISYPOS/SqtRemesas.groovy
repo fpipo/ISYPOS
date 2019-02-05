@@ -18,7 +18,7 @@ class SqtRemesas {
     String tc
     int enviado
     String mensajeTicket
-    String caja
+    int caja
     String origen
     String tipoIdentificacion
     String numeroIdentificacion
@@ -26,7 +26,6 @@ class SqtRemesas {
 
     SqtTienda tienda
     SqtTransaccion tranType
-    SqtAsignacion asignacion
 
     static constraints = {
         folio maxSize: 50

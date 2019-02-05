@@ -9,23 +9,23 @@ class SqtPoliza {
     String comentarios
     Date fechaMod
     int enviado
+    int clavePol
 
     SqtUsuario usuarioMod
     SqtMovimiento movimiento
     SqtTienda tienda
-    SqtMoneda moneda
+    SqtEstatus estatus
 
     static hasMany = [detalles:SqtDetallePoliza]
 
-    static mapping = {
+   static mapping = {
         id generator: 'uuid', name:'id'
     }
 
     static constraints = {
         sociedad maxSize: 4
         periodo maxSize: 2
-        comentarios maxSize: 250
+        comentarios maxSize: 250, nullable: true
         enviado nullable:true
-        moneda nullable:true
     }
 }
